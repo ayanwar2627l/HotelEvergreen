@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { camera, image } from "lucide-react";
+import { Camera, Image } from "lucide-react";
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -13,6 +13,7 @@ const Gallery = () => {
     { id: "exterior", name: "Hotel Exterior" },
     { id: "rooms", name: "Rooms" },
     { id: "interior", name: "Interior" },
+    { id: "views", name: "Views" },
   ];
 
   const galleryImages = [
@@ -71,6 +72,34 @@ const Gallery = () => {
       category: "exterior",
       title: "Hotel Exterior Day View",
       description: "Hotel building during daytime"
+    },
+    {
+      id: 9,
+      src: "/lovable-uploads/ae52bb62-fc72-411b-81d9-15e1cc96291e.png",
+      category: "rooms",
+      title: "Luxury Bedroom Suite",
+      description: "Elegant bedroom with premium tufted headboard and comfortable bedding"
+    },
+    {
+      id: 10,
+      src: "/lovable-uploads/a3b8bb74-3732-45b4-9f2e-42118948ced3.png",
+      category: "views",
+      title: "Scenic Garden View",
+      description: "Beautiful view of lush gardens and natural surroundings from our rooms"
+    },
+    {
+      id: 11,
+      src: "/lovable-uploads/5bb32163-d01e-4c04-b4bf-f3ea249ccd91.png",
+      category: "exterior",
+      title: "Hotel Evergreen Festive Exterior",
+      description: "Hotel beautifully decorated with colorful lights and festive ambiance"
+    },
+    {
+      id: 12,
+      src: "/lovable-uploads/a16cba0d-6a2b-4508-ad81-706a57fabc35.png",
+      category: "views",
+      title: "Sunset Paradise",
+      description: "Breathtaking sunset view with palm trees and serene waters"
     }
   ];
 
@@ -130,7 +159,7 @@ const Gallery = () => {
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                    <camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                 </div>
                 <div className="p-6">
@@ -147,7 +176,7 @@ const Gallery = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="w-16 h-16 bg-evergreen-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <image className="w-8 h-8 text-evergreen-600" />
+            <Image className="w-8 h-8 text-evergreen-600" />
           </div>
           <h2 className="text-3xl font-playfair font-bold text-gray-900 mb-6">
             Want to See More?
