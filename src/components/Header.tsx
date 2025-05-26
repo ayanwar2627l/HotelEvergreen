@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,16 +56,17 @@ const Header = () => {
             <Button
               asChild
               variant="outline"
-              className="border-evergreen-600 text-evergreen-600 hover:bg-evergreen-50"
+              className="group relative overflow-hidden border-2 border-green-500 text-green-600 hover:text-white bg-white hover:bg-green-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 px-6 py-3 font-semibold"
             >
               <a href="tel:7782935050" className="flex items-center space-x-2">
-                <phone className="w-4 h-4" />
-                <span>Call Now</span>
+                <Phone className="w-5 h-5 animate-pulse" />
+                <span className="relative z-10">Call Now</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
             </Button>
             <Button
               asChild
-              className="bg-evergreen-600 hover:bg-evergreen-700"
+              className="bg-evergreen-600 hover:bg-evergreen-700 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl px-6 py-3 font-semibold"
             >
               <a 
                 href="https://wa.me/7782935050" 
@@ -110,16 +111,17 @@ const Header = () => {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-evergreen-600 text-evergreen-600 hover:bg-evergreen-50"
+                  className="group relative overflow-hidden border-2 border-green-500 text-green-600 hover:text-white bg-white hover:bg-green-500 transition-all duration-300 shadow-lg hover:shadow-xl py-3 font-semibold"
                 >
                   <a href="tel:7782935050" className="flex items-center justify-center space-x-2">
-                    <phone className="w-4 h-4" />
-                    <span>Call Now</span>
+                    <Phone className="w-5 h-5 animate-pulse" />
+                    <span className="relative z-10">Call Now</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </a>
                 </Button>
                 <Button
                   asChild
-                  className="bg-evergreen-600 hover:bg-evergreen-700"
+                  className="bg-evergreen-600 hover:bg-evergreen-700 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl py-3 font-semibold"
                 >
                   <a 
                     href="https://wa.me/7782935050" 
