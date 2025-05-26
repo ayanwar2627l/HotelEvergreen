@@ -1,27 +1,26 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
-import { star, users, map-pin, clock } from "lucide-react";
+import { Star, Users, MapPin, Clock } from "lucide-react";
 
 const About = () => {
   const values = [
     {
-      icon: star,
+      icon: Star,
       title: "Excellence",
       description: "We strive for excellence in every aspect of our service, ensuring each guest receives the highest quality experience."
     },
     {
-      icon: users,
+      icon: Users,
       title: "Hospitality",
       description: "Our warm hospitality reflects the rich cultural heritage of Bihar, making every guest feel at home."
     },
     {
-      icon: map-pin,
+      icon: MapPin,
       title: "Location",
       description: "Strategically located in Valmiki Nagar, we serve as the perfect gateway to explore natural wonders."
     },
     {
-      icon: clock,
+      icon: Clock,
       title: "Service",
       description: "Round-the-clock service ensuring our guests have everything they need at any time of day."
     }

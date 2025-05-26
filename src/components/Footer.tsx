@@ -1,7 +1,6 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { phone, map-pin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -31,7 +30,7 @@ const Footer = () => {
                 className="border-evergreen-400 text-evergreen-400 hover:bg-evergreen-800"
               >
                 <a href="tel:7782935050" className="flex items-center space-x-2">
-                  <phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4" />
                   <span>7782935050</span>
                 </a>
               </Button>
@@ -68,14 +67,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <map-pin className="w-5 h-5 text-evergreen-400 mt-0.5" />
+                <MapPin className="w-5 h-5 text-evergreen-400 mt-0.5" />
                 <div>
                   <p className="text-evergreen-200">Valmiki Nagar</p>
                   <p className="text-evergreen-200">West Champaran, Bihar</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <phone className="w-5 h-5 text-evergreen-400" />
+                <Phone className="w-5 h-5 text-evergreen-400" />
                 <p className="text-evergreen-200">+91 7782935050</p>
               </div>
             </div>

@@ -1,23 +1,22 @@
-
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { star, map-pin, phone, users, calendar, camera } from "lucide-react";
+import { Star, MapPin, Phone, Users, Calendar, Camera } from "lucide-react";
 
 const Index = () => {
   const features = [
     {
-      icon: star,
+      icon: Star,
       title: "Luxury Comfort",
       description: "Premium AC rooms with top-notch amenities and services"
     },
     {
-      icon: map-pin,
+      icon: MapPin,
       title: "Prime Location",
       description: "Gateway to Valmiki Tiger Reserve and natural attractions"
     },
     {
-      icon: users,
+      icon: Users,
       title: "Exceptional Service",
       description: "Dedicated staff ensuring comfort and memorable experiences"
     }
@@ -71,7 +70,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
               >
-                <calendar className="w-5 h-5" />
+                <Calendar className="w-5 h-5" />
                 <span>Book Now</span>
               </a>
             </Button>
@@ -82,7 +81,7 @@ const Index = () => {
               className="border-white text-white hover:bg-white hover:text-evergreen-600 text-lg px-8 py-6"
             >
               <a href="tel:7782935050" className="flex items-center space-x-2">
-                <phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
                 <span>Call Now</span>
               </a>
             </Button>
@@ -152,19 +151,19 @@ const Index = () => {
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
-                  <star className="w-5 h-5 text-evergreen-600 mr-3" />
+                  <Star className="w-5 h-5 text-evergreen-600 mr-3" />
                   Air-conditioned comfort
                 </li>
                 <li className="flex items-center">
-                  <star className="w-5 h-5 text-evergreen-600 mr-3" />
+                  <Star className="w-5 h-5 text-evergreen-600 mr-3" />
                   Premium bedding and furnishing
                 </li>
                 <li className="flex items-center">
-                  <star className="w-5 h-5 text-evergreen-600 mr-3" />
+                  <Star className="w-5 h-5 text-evergreen-600 mr-3" />
                   Modern bathroom facilities
                 </li>
                 <li className="flex items-center">
-                  <star className="w-5 h-5 text-evergreen-600 mr-3" />
+                  <Star className="w-5 h-5 text-evergreen-600 mr-3" />
                   24/7 room service
                 </li>
               </ul>
@@ -195,7 +194,7 @@ const Index = () => {
               </p>
               <Button asChild variant="outline" className="border-evergreen-600 text-evergreen-600 hover:bg-evergreen-50">
                 <a href="/gallery" className="flex items-center space-x-2">
-                  <camera className="w-4 h-4" />
+                  <Camera className="w-4 h-4" />
                   <span>View Gallery</span>
                 </a>
               </Button>
@@ -228,7 +227,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
                   <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
@@ -264,7 +263,7 @@ const Index = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
               >
-                <calendar className="w-5 h-5" />
+                <Calendar className="w-5 h-5" />
                 <span>Book Now on WhatsApp</span>
               </a>
             </Button>
@@ -275,7 +274,7 @@ const Index = () => {
               className="border-white text-white hover:bg-white hover:text-evergreen-600 text-lg px-8 py-6"
             >
               <a href="tel:7782935050" className="flex items-center space-x-2">
-                <phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
                 <span>Call: 7782935050</span>
               </a>
             </Button>

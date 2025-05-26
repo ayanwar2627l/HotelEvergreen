@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { phone, map-pin, clock, star } from "lucide-react";
+import { Phone, MapPin, Clock, Star } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -40,19 +40,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: phone,
+      icon: Phone,
       title: "Phone Number",
       details: ["+91 7782935050"],
       action: "tel:7782935050"
     },
     {
-      icon: map-pin,
+      icon: MapPin,
       title: "Address",
       details: ["Valmiki Nagar", "West Champaran", "Bihar, India"],
       action: "https://maps.google.com/?q=Valmiki+Nagar+West+Champaran+Bihar"
     },
     {
-      icon: clock,
+      icon: Clock,
       title: "Business Hours",
       details: ["24/7 Reception", "Restaurant: 7 AM - 11 PM", "Room Service: Available 24/7"],
       action: null
@@ -118,7 +118,7 @@ const Contact = () => {
               className="border-white text-white hover:bg-white hover:text-evergreen-600 text-lg px-8 py-6"
             >
               <a href="tel:7782935050" className="flex items-center space-x-2">
-                <phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
                 <span>Call: 7782935050</span>
               </a>
             </Button>
@@ -289,7 +289,7 @@ const Contact = () => {
                   <div className="space-y-3">
                     {services.map((service, index) => (
                       <div key={index} className="flex items-center space-x-3">
-                        <star className="w-5 h-5 text-evergreen-600" />
+                        <Star className="w-5 h-5 text-evergreen-600" />
                         <span className="text-gray-700">{service}</span>
                       </div>
                     ))}
