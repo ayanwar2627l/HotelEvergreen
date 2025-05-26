@@ -37,7 +37,7 @@ const Rooms = () => {
       bedType: "King Size Bed + Sofa",
       amenities: ["Air Conditioning", "Free WiFi", "Room Service", "LED TV", "Attached Bathroom", "Mini Bar"],
       features: ["Forest View", "Premium Amenities", "Seating Area", "Welcome Drinks", "Late Checkout"]
-    }
+    },
     {
       id: 4,
       name: "Premium Family Suite Room",
