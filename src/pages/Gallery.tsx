@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { camera, image } from "lucide-react";
+import { Camera, Image } from "lucide-react";
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -130,7 +130,7 @@ const Gallery = () => {
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                    <camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <Camera className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                 </div>
                 <div className="p-6">
@@ -147,7 +147,7 @@ const Gallery = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="w-16 h-16 bg-evergreen-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <image className="w-8 h-8 text-evergreen-600" />
+            <Image className="w-8 h-8 text-evergreen-600" />
           </div>
           <h2 className="text-3xl font-playfair font-bold text-gray-900 mb-6">
             Want to See More?
