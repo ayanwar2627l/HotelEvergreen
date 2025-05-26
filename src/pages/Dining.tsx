@@ -1,9 +1,8 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { star, clock, phone } from "lucide-react";
+import { Star, Clock, Phone } from "lucide-react";
 
 const Dining = () => {
   const menuCategories = [
@@ -51,17 +50,17 @@ const Dining = () => {
 
   const diningFeatures = [
     {
-      icon: star,
+      icon: Star,
       title: "Fresh Ingredients",
       description: "We source the finest local ingredients for authentic flavors"
     },
     {
-      icon: clock,
+      icon: Clock,
       title: "Quick Service",
       description: "Fast and efficient service without compromising quality"
     },
     {
-      icon: phone,
+      icon: Phone,
       title: "Room Service",
       description: "24/7 room service for your convenience"
     }
