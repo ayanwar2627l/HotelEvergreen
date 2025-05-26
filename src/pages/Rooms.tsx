@@ -7,8 +7,19 @@ import { star, users, bed, phone, calendar } from "lucide-react";
 
 const Rooms = () => {
   const rooms = [
+    
     {
       id: 1,
+      name: "Non Ac Room",
+      image: "/lovable-uploads/8249f34d-2689-46e6-b3b4-684f39a670a4.png",
+      price: "₹1,000",
+      capacity: "2 Adults",
+      bedType: "2 Beds",
+      amenities: [ "TV", "Attached Bathroom","Others"],
+      features: ["Spacious Layout", "Family Friendly", "Service"]
+    },
+    {
+      id: 2,
       name: "Deluxe AC Room",
       image: "/lovable-uploads/a9947cc1-707c-43f4-a749-dca956494f79.png",
       price: "₹2,500",
@@ -18,24 +29,24 @@ const Rooms = () => {
       features: ["Mountain View", "Premium Bedding", "Work Desk", "Safari and Tours"]
     },
     {
-      id: 2,
-      name: "Premium Room",
+      id: 3,
+      name: "Premium Family Suite Room",
       image: "/lovable-uploads/d25487f1-7ba0-411a-b5b7-8b61e463096f.png",
-      price: "₹3,200",
+      price: "₹3,000",
       capacity: "2-3 Adults",
       bedType: "King Size Bed + Sofa",
       amenities: ["Air Conditioning", "Free WiFi", "Room Service", "LED TV", "Attached Bathroom", "Mini Bar"],
       features: ["Forest View", "Premium Amenities", "Seating Area", "Welcome Drinks", "Late Checkout"]
-    },
+    }
     {
-      id: 3,
-      name: "Family Suite",
-      image: "/lovable-uploads/8249f34d-2689-46e6-b3b4-684f39a670a4.png",
-      price: "₹4,000",
+      id: 4,
+      name: "Premium Family Suite Room",
+      image: "/lovable-uploads/d25487f1-7ba0-411a-b5b7-8b61e463096f.png",
+      price: "₹3,500",
       capacity: "4-5 Adults",
-      bedType: "2 Beds + Living Area",
-      amenities: ["Air Conditioning", "Free WiFi", "Room Service", "Smart TV", "Attached Bathroom", "Kitchenette"],
-      features: ["Spacious Layout", "Family Friendly", "Separate Living Area", "Complimentary Meals", "Priority Service"]
+      bedType: "4 Beds ",
+      amenities: ["Air Conditioning", "Room Service", "LED TV", "Attached Bathroom"],
+      features: ["Forest View", "Premium Amenities", "Seating Area", "Welcome Drinks", "12:00 Pm Checkout"]
     }
   ];
 
@@ -43,11 +54,10 @@ const Rooms = () => {
     "24/7 Front Desk",
     "Restaurant & Dining",
     "Room Service",
-    "Free WiFi",
     "Parking Facility",
-    "Laundry Service",
     "Tourist Information",
-    "Airport Transfer"
+    "Airport Transfer",
+    "Safari On demand Basis"
   ];
 
   return (
