@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Star, Users, Bed, Phone, Calendar } from "lucide-react";
+import { star, users, bed, phone, calendar } from "lucide-react";
 
 const Rooms = () => {
   const rooms = [
@@ -91,11 +91,11 @@ const Rooms = () => {
                     
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="flex items-center space-x-2">
-                        <Users className="w-5 h-5 text-evergreen-600" />
+                        <users className="w-5 h-5 text-evergreen-600" />
                         <span className="text-gray-600">{room.capacity}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <Bed className="w-5 h-5 text-evergreen-600" />
+                        <bed className="w-5 h-5 text-evergreen-600" />
                         <span className="text-gray-600">{room.bedType}</span>
                       </div>
                     </div>
@@ -105,7 +105,7 @@ const Rooms = () => {
                       <div className="grid grid-cols-2 gap-2">
                         {room.amenities.map((amenity, idx) => (
                           <div key={idx} className="flex items-center space-x-2">
-                            <Star className="w-4 h-4 text-evergreen-600" />
+                            <star className="w-4 h-4 text-evergreen-600" />
                             <span className="text-sm text-gray-600">{amenity}</span>
                           </div>
                         ))}
@@ -134,7 +134,7 @@ const Rooms = () => {
                           rel="noopener noreferrer"
                           className="flex items-center justify-center space-x-2"
                         >
-                          <Calendar className="w-4 h-4" />
+                          <calendar className="w-4 h-4" />
                           <span>Book on WhatsApp</span>
                         </a>
                       </Button>
@@ -144,7 +144,7 @@ const Rooms = () => {
                         className="border-evergreen-600 text-evergreen-600 hover:bg-evergreen-50"
                       >
                         <a href="tel:7782935050" className="flex items-center justify-center space-x-2">
-                          <Phone className="w-4 h-4" />
+                          <phone className="w-4 h-4" />
                           <span>Call Now</span>
                         </a>
                       </Button>
@@ -173,7 +173,7 @@ const Rooms = () => {
               <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-0">
                   <div className="w-12 h-12 bg-evergreen-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Star className="w-6 h-6 text-evergreen-600" />
+                    <star className="w-6 h-6 text-evergreen-600" />
                   </div>
                   <p className="font-medium text-gray-900">{amenity}</p>
                 </CardContent>
@@ -204,7 +204,7 @@ const Rooms = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
               >
-                <Calendar className="w-5 h-5" />
+                <calendar className="w-5 h-5" />
                 <span>Book via WhatsApp</span>
               </a>
             </Button>
@@ -215,7 +215,7 @@ const Rooms = () => {
               className="border-white text-white hover:bg-white hover:text-evergreen-600 text-lg px-8 py-6"
             >
               <a href="tel:7782935050" className="flex items-center space-x-2">
-                <Phone className="w-5 h-5" />
+                <phone className="w-5 h-5" />
                 <span>Call: 7782935050</span>
               </a>
             </Button>
