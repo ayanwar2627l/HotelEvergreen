@@ -14,8 +14,8 @@ const Rooms = () => {
       price: "₹2,500",
       capacity: "2 Adults",
       bedType: "King Size Bed",
-      amenities: ["Air Conditioning", "Free WiFi", "Room Service", "Television", "Attached Bathroom", "Mini Fridge"],
-      features: ["Mountain View", "Premium Bedding", "Work Desk", "Complimentary Breakfast"]
+      amenities: ["Air Conditioning", "Table", "Room Service", "Television", "Attached Bathroom", "Others"],
+      features: ["Mountain View", "Premium Bedding", "Work Desk", "Safari and Tours"]
     },
     {
       id: 2,
