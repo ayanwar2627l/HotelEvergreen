@@ -55,13 +55,12 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button
               asChild
-              variant="outline"
-              className="group relative overflow-hidden border-2 border-green-500 text-green-600 hover:text-white bg-white hover:bg-green-500 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 px-6 py-3 font-semibold"
+              size="lg"
+              className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 shadow-2xl hover:shadow-red-500/50 transform hover:scale-110 transition-all duration-300 animate-pulse border-4 border-red-800"
             >
-              <a href="tel:7782935050" className="flex items-center space-x-2">
-                <Phone className="w-5 h-5 animate-pulse" />
-                <span className="relative z-10">Call Now</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <a href="tel:7782935050" className="flex items-center space-x-3">
+                <Phone className="w-6 h-6 animate-bounce" />
+                <span className="relative z-10 text-xl font-extrabold">CALL NOW</span>
               </a>
             </Button>
             <Button
@@ -110,13 +109,12 @@ const Header = () => {
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
                   asChild
-                  variant="outline"
-                  className="group relative overflow-hidden border-2 border-green-500 text-green-600 hover:text-white bg-white hover:bg-green-500 transition-all duration-300 shadow-lg hover:shadow-xl py-3 font-semibold"
+                  size="lg"
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg py-4 shadow-2xl hover:shadow-red-500/50 transform hover:scale-105 transition-all duration-300 border-4 border-red-800"
                 >
-                  <a href="tel:7782935050" className="flex items-center justify-center space-x-2">
-                    <Phone className="w-5 h-5 animate-pulse" />
-                    <span className="relative z-10">Call Now</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <a href="tel:7782935050" className="flex items-center justify-center space-x-3">
+                    <Phone className="w-6 h-6 animate-bounce" />
+                    <span className="relative z-10 text-xl font-extrabold">CALL NOW</span>
                   </a>
                 </Button>
                 <Button
