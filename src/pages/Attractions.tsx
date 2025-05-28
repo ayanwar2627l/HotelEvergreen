@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -143,48 +142,48 @@ const Attractions = () => {
   const nearbyPlaces = [
     {
       name: "Buddha Stupa, Kesariya",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=500&h=300&fit=crop",
-      description: "World's largest Buddhist stupa, ancient marvel from the Mauryan period"
+      image: "https://images.unsplash.com/photo-1624952264648-01143ab9b77b?w=500&h=300&fit=crop",
+      description: "World's largest Buddhist stupa, an ancient archaeological marvel dating back to the Mauryan period"
     },
     {
-      name: "Gandak River Banks",
-      image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&h=300&fit=crop",
-      description: "Serene riverfront with pristine waters and scenic landscapes"
-    },
-    {
-      name: "Himalayan Foothills View",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=300&fit=crop",
-      description: "Breathtaking views of the distant Himalayan mountain ranges"
-    },
-    {
-      name: "Sal Forest Trails",
-      image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=500&h=300&fit=crop",
-      description: "Dense sal forests perfect for nature walks and wildlife spotting"
-    },
-    {
-      name: "Chitwan National Park (Nepal)",
+      name: "Gandak River Confluence",
       image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&h=300&fit=crop",
-      description: "World Heritage Site across the border, famous for rhinos and tigers"
+      description: "Sacred confluence where multiple rivers meet, offering serene views and spiritual significance"
     },
     {
-      name: "Rural Bihar Villages",
+      name: "Himalayan Foothills Viewpoint",
+      image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=300&fit=crop",
+      description: "Spectacular vantage point offering panoramic views of the distant Himalayan mountain ranges"
+    },
+    {
+      name: "Sal Forest Nature Trails",
+      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=500&h=300&fit=crop",
+      description: "Dense sal forests with well-maintained trails perfect for nature walks and wildlife spotting"
+    },
+    {
+      name: "Nepal Border Crossing",
+      image: "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?w=500&h=300&fit=crop",
+      description: "International border crossing to Nepal, gateway to Chitwan National Park and Himalayan adventures"
+    },
+    {
+      name: "Traditional Bihar Villages",
       image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=500&h=300&fit=crop",
-      description: "Experience authentic rural life and traditional culture"
+      description: "Authentic rural villages showcasing traditional Bihari culture, handicrafts, and warm hospitality"
     },
     {
       name: "Bagaha Sugar Mill Heritage",
       image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?w=500&h=300&fit=crop",
-      description: "Historic sugar mill showcasing industrial heritage of the region"
+      description: "Historic sugar mill representing the industrial heritage and economic backbone of the region"
     },
     {
       name: "Terai Grasslands",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=500&h=300&fit=crop",
-      description: "Vast grasslands extending towards the Nepal border"
+      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=500&h=300&fit=crop",
+      description: "Vast stretches of pristine grasslands extending towards the Nepal border, habitat for diverse wildlife"
     },
     {
-      name: "Sunrise Point at Someshwar",
+      name: "Someshwar Sunrise Point",
       image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&h=300&fit=crop",
-      description: "Perfect spot to witness spectacular sunrise over the forests"
+      description: "Perfect natural observatory to witness spectacular sunrises and sunsets over the forest landscape"
     }
   ];
 
@@ -397,23 +396,23 @@ const Attractions = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {nearbyPlaces.map((place, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden h-72">
                   <img
                     src={place.image}
                     alt={place.name}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform transition-transform duration-300 group-hover:translate-y-[-8px]">
                     <h3 className="text-xl font-semibold mb-2 group-hover:text-yellow-200 transition-colors duration-300">
                       {place.name}
                     </h3>
-                    <p className="text-sm text-gray-200 leading-relaxed">
+                    <p className="text-sm text-gray-200 leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all duration-300">
                       {place.description}
                     </p>
                   </div>
                   <div className="absolute top-4 right-4">
-                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-evergreen-600/80 transition-colors duration-300">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-evergreen-600/80 transition-colors duration-300 transform group-hover:rotate-12">
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                   </div>
@@ -440,7 +439,7 @@ const Attractions = () => {
             <CardContent className="p-0">
               <div className="relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.1234567890123!2d84.0932!3d27.1832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1234abcd5678%3A0x1234567890abcdef!2sHotel%20Evergreen%2C%20Valmiki%20Nagar%2C%20Bihar!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3544.4059220292334!2d84.06384647559512!3d27.31779597642352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399355262585d807%3A0xa6643b64be0a8695!2sHotel%20Evergreen!5e0!3m2!1sen!2sin!4v1714416781970!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
