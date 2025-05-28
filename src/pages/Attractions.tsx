@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Clock, Camera, Star } from "lucide-react";
+import { MapPin, Clock, Camera, Star, Navigation } from "lucide-react";
 
 const Attractions = () => {
   const topAttractions = [
@@ -137,6 +137,54 @@ const Attractions = () => {
       description: "A small village known for its picturesque landscapes and the confluence of the Gandak and Harha rivers.",
       highlights: ["River Confluence", "Village Life", "Cross-border Culture", "Natural Beauty"],
       bestTime: "Year Round"
+    }
+  ];
+
+  const nearbyPlaces = [
+    {
+      name: "Buddha Stupa, Kesariya",
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=500&h=300&fit=crop",
+      description: "World's largest Buddhist stupa, ancient marvel from the Mauryan period"
+    },
+    {
+      name: "Gandak River Banks",
+      image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=500&h=300&fit=crop",
+      description: "Serene riverfront with pristine waters and scenic landscapes"
+    },
+    {
+      name: "Himalayan Foothills View",
+      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=300&fit=crop",
+      description: "Breathtaking views of the distant Himalayan mountain ranges"
+    },
+    {
+      name: "Sal Forest Trails",
+      image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=500&h=300&fit=crop",
+      description: "Dense sal forests perfect for nature walks and wildlife spotting"
+    },
+    {
+      name: "Chitwan National Park (Nepal)",
+      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&h=300&fit=crop",
+      description: "World Heritage Site across the border, famous for rhinos and tigers"
+    },
+    {
+      name: "Rural Bihar Villages",
+      image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=500&h=300&fit=crop",
+      description: "Experience authentic rural life and traditional culture"
+    },
+    {
+      name: "Bagaha Sugar Mill Heritage",
+      image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?w=500&h=300&fit=crop",
+      description: "Historic sugar mill showcasing industrial heritage of the region"
+    },
+    {
+      name: "Terai Grasslands",
+      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=500&h=300&fit=crop",
+      description: "Vast grasslands extending towards the Nepal border"
+    },
+    {
+      name: "Sunrise Point at Someshwar",
+      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&h=300&fit=crop",
+      description: "Perfect spot to witness spectacular sunrise over the forests"
     }
   ];
 
@@ -331,6 +379,91 @@ const Attractions = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* More Places to Visit Near You */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair font-bold text-gray-900 mb-4">
+              More Places to Visit Near You
+            </h2>
+            <p className="text-xl text-gray-600">
+              Explore additional beautiful destinations within easy reach of Hotel Evergreen
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {nearbyPlaces.map((place, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={place.image}
+                    alt={place.name}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-xl font-semibold mb-2 group-hover:text-yellow-200 transition-colors duration-300">
+                      {place.name}
+                    </h3>
+                    <p className="text-sm text-gray-200 leading-relaxed">
+                      {place.description}
+                    </p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-evergreen-600/80 transition-colors duration-300">
+                      <MapPin className="w-5 h-5 text-white" />
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair font-bold text-gray-900 mb-4">
+              Find Us on the Map
+            </h2>
+            <p className="text-xl text-gray-600">
+              Hotel Evergreen, Valmiki Nagar, Bihar - Your gateway to natural wonders
+            </p>
+          </div>
+          
+          <Card className="overflow-hidden shadow-xl">
+            <CardContent className="p-0">
+              <div className="relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.1234567890123!2d84.0932!3d27.1832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1234abcd5678%3A0x1234567890abcdef!2sHotel%20Evergreen%2C%20Valmiki%20Nagar%2C%20Bihar!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Hotel Evergreen Location Map"
+                  className="w-full"
+                ></iframe>
+                <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-4 max-w-sm">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-evergreen-600 rounded-full flex items-center justify-center">
+                      <Navigation className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Hotel Evergreen</h4>
+                      <p className="text-sm text-gray-600">Valmiki Nagar, Bihar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
