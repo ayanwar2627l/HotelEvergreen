@@ -1,3 +1,4 @@
+
 import Layout from "@/components/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -5,13 +6,44 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, Camera, Star } from "lucide-react";
 
 const Attractions = () => {
+  const topAttractions = [
+    {
+      image: "/lovable-uploads/9e2663cf-5046-494d-b5f3-211322a5cde2.png",
+      caption: "Elephant Safari Experience - Cross the serene waters on majestic elephants"
+    },
+    {
+      image: "/lovable-uploads/ff6aa164-5147-4d4c-8759-26c8ad11daa1.png",
+      caption: "Elephant Rides in Nature - Enjoy guided elephant tours through lush greenery"
+    },
+    {
+      image: "/lovable-uploads/99c7b7f9-29cc-4f12-911e-5a97f4421896.png",
+      caption: "River Rafting Adventure - Thrilling white water rafting on pristine rivers"
+    },
+    {
+      image: "/lovable-uploads/4af9cb62-6400-4fb9-ba0c-25f7640573a3.png",
+      caption: "Valmiki Tiger Reserve - Home to magnificent Bengal tigers in their natural habitat"
+    },
+    {
+      image: "/lovable-uploads/6ba63c7e-116d-42f3-8e4e-09330f8edc33.png",
+      caption: "Wildlife Encounters - Meet gentle giants on the forest paths"
+    },
+    {
+      image: "/lovable-uploads/4e373309-3aad-4217-a5a4-df17d5a61e4a.png",
+      caption: "Tiger Reserve Entrance - Gateway to Bihar's premier wildlife sanctuary"
+    },
+    {
+      image: "/lovable-uploads/6813e7b0-edbb-42e0-a466-001780d87991.png",
+      caption: "Tiger Safari - Witness the royal Bengal tiger in its natural environment"
+    }
+  ];
+
   const attractions = [
     {
       name: "Valmiki Tiger Reserve & National Park",
       distance: "5 km",
       duration: "Half Day",
       type: "Wildlife Sanctuary",
-      image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/4af9cb62-6400-4fb9-ba0c-25f7640573a3.png",
       description: "Bihar's only national park, home to Bengal tigers, leopards, elephants, and over 250 bird species. Activities include jeep safaris, elephant rides, and birdwatching.",
       highlights: ["Tiger Safari", "Bird Watching", "Nature Walks", "Wildlife Photography"],
       bestTime: "October to March"
@@ -130,6 +162,41 @@ const Attractions = () => {
               Discover the natural wonders and cultural treasures around Valmiki Nagar. 
               From the magnificent Tiger Reserve to sacred sites and pristine rivers.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Top Attractions Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-playfair font-bold text-gray-900 mb-4">
+              Top Attractions
+            </h2>
+            <p className="text-xl text-gray-600">
+              Experience the best of nature and adventure around Hotel Evergreen
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {topAttractions.map((attraction, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="relative group">
+                  <img
+                    src={attraction.image}
+                    alt={attraction.caption}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <p className="text-sm font-medium">{attraction.caption}</p>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <p className="text-gray-700 text-sm leading-relaxed">{attraction.caption}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
