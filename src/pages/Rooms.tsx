@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,15 +6,14 @@ import { star, users, bed, phone, calendar } from "lucide-react";
 
 const Rooms = () => {
   const rooms = [
-    
     {
       id: 1,
-      name: "Non Ac Room",
+      name: "Non AC Room",
       image: "/lovable-uploads/8249f34d-2689-46e6-b3b4-684f39a670a4.png",
       price: "₹1,000",
       capacity: "2 Adults",
-      bedType: "2 Beds",
-      amenities: [ "TV", "Attached Bathroom","Others"],
+      bedType: "Double Bed",
+      amenities: ["TV", "Attached Bathroom", "Others"],
       features: ["Spacious Layout", "Family Friendly", "Service"]
     },
     {
@@ -34,17 +32,17 @@ const Rooms = () => {
       image: "/lovable-uploads/d25487f1-7ba0-411a-b5b7-8b61e463096f.png",
       price: "₹3,000",
       capacity: "2-3 Adults",
-      bedType: "King Size Bed + Sofa",
+      bedType: "3 Beds",
       amenities: ["Air Conditioning", "Free WiFi", "Room Service", "LED TV", "Attached Bathroom", "Mini Bar"],
       features: ["Forest View", "Premium Amenities", "Seating Area", "Welcome Drinks", "Late Checkout"]
     },
     {
       id: 4,
       name: "Premium Family Suite Room",
-      image: "/lovable-uploads/d25487f1-7ba0-411a-b5b7-8b61e463096f.png",
+      image: "/lovable-uploads/305c1df5-e6db-4bf4-8af0-9465425c2817.png",
       price: "₹3,500",
       capacity: "4-5 Adults",
-      bedType: "4 Beds ",
+      bedType: "4 Beds",
       amenities: ["Air Conditioning", "Room Service", "LED TV", "Attached Bathroom"],
       features: ["Forest View", "Premium Amenities", "Seating Area", "Welcome Drinks", "12:00 Pm Checkout"]
     }

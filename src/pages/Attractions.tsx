@@ -7,64 +7,104 @@ import { MapPin, Clock, Camera, Star } from "lucide-react";
 const Attractions = () => {
   const attractions = [
     {
-      name: "Valmiki Tiger Reserve",
+      name: "Valmiki Tiger Reserve & National Park",
       distance: "5 km",
       duration: "Half Day",
       type: "Wildlife Sanctuary",
       image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=500&h=300&fit=crop",
-      description: "The crown jewel of Valmiki Nagar, this tiger reserve spans 899 square kilometers and is home to Royal Bengal Tigers, leopards, wild boars, sambhar, and over 250 species of birds.",
+      description: "Bihar's only national park, home to Bengal tigers, leopards, elephants, and over 250 bird species. Activities include jeep safaris, elephant rides, and birdwatching.",
       highlights: ["Tiger Safari", "Bird Watching", "Nature Walks", "Wildlife Photography"],
       bestTime: "October to March"
     },
     {
+      name: "Jata Shankar Temple",
+      distance: "2.1 km",
+      duration: "1-2 hours",
+      type: "Religious Site",
+      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=500&h=300&fit=crop",
+      description: "A revered Hindu temple dedicated to Lord Shiva, known for its serene ambiance and spiritual significance.",
+      highlights: ["Ancient Temple", "Spiritual Experience", "Sacred Rituals", "Peaceful Environment"],
+      bestTime: "Year Round"
+    },
+    {
+      name: "Nardevi Mandir",
+      distance: "3.2 km",
+      duration: "1-2 hours",
+      type: "Religious Site",
+      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=500&h=300&fit=crop",
+      description: "An ancient temple dedicated to Goddess Nardevi, attracting devotees seeking blessings and peace.",
+      highlights: ["Ancient Architecture", "Religious Ceremonies", "Peaceful Atmosphere", "Cultural Heritage"],
+      bestTime: "Year Round"
+    },
+    {
+      name: "Triveni Dham",
+      distance: "3.5 km",
+      duration: "2-3 hours",
+      type: "Sacred Site",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=300&fit=crop",
+      description: "A sacred confluence of three rivers—Sona, Tamasa, and Sapta Gandaki—holding immense religious importance.",
+      highlights: ["Sacred Confluence", "River Views", "Religious Significance", "Meditation Spot"],
+      bestTime: "October to March"
+    },
+    {
       name: "Valmiki Ashram",
-      distance: "8 km",
+      distance: "4 km",
       duration: "2-3 hours",
       type: "Religious Site",
       image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=500&h=300&fit=crop",
-      description: "A sacred site believed to be where Sage Valmiki composed the Ramayana. The ashram offers spiritual solace amidst beautiful natural surroundings.",
-      highlights: ["Ancient Temple", "Peaceful Environment", "Spiritual Experience", "Historical Significance"],
+      description: "Believed to be the meditation site of Sage Valmiki, the author of the Ramayana, offering a tranquil environment.",
+      highlights: ["Historical Significance", "Spiritual Experience", "Peaceful Environment", "Ancient Heritage"],
       bestTime: "Year Round"
     },
     {
-      name: "Gandak River",
-      distance: "3 km",
-      duration: "2-4 hours",
-      type: "Natural Beauty",
+      name: "Valmikinagar Dam",
+      distance: "2 km",
+      duration: "1-2 hours",
+      type: "Engineering Marvel",
       image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&h=300&fit=crop",
-      description: "The serene Gandak River offers beautiful views, peaceful boat rides, and excellent fishing opportunities. Perfect for nature lovers and photography enthusiasts.",
-      highlights: ["Boat Rides", "River Fishing", "Sunset Views", "Picnic Spots"],
+      description: "Built on the Gandak River, this dam is crucial for irrigation and hydroelectricity and serves as a scenic spot for visitors.",
+      highlights: ["River Views", "Engineering Wonder", "Scenic Beauty", "Photography"],
       bestTime: "October to April"
     },
     {
-      name: "Madanpur Forest",
-      distance: "12 km",
-      duration: "Half Day",
-      type: "Forest Area",
-      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=500&h=300&fit=crop",
-      description: "Dense forest area perfect for trekking and nature walks. Home to diverse flora and fauna, offering an immersive experience in nature.",
-      highlights: ["Trekking Trails", "Nature Photography", "Flora & Fauna", "Adventure Activities"],
+      name: "Someshwar Temple",
+      distance: "6 km",
+      duration: "3-4 hours",
+      type: "Religious Site",
+      image: "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=500&h=300&fit=crop",
+      description: "A temple dedicated to Lord Shiva, situated atop Someshwar Peak, offering panoramic views of the surrounding forests.",
+      highlights: ["Mountain Views", "Forest Panorama", "Spiritual Experience", "Trekking"],
       bestTime: "November to February"
     },
     {
-      name: "Bhikhna Thori Border",
-      distance: "15 km",
-      duration: "3-4 hours",
-      type: "Border Area",
-      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=300&fit=crop",
-      description: "The India-Nepal border area offers unique cultural experiences and beautiful landscapes. Great for understanding the cross-border culture and traditions.",
-      highlights: ["Cultural Exchange", "Cross-border Views", "Local Markets", "Traditional Crafts"],
-      bestTime: "Year Round"
-    },
-    {
-      name: "Som River",
+      name: "Parewa Dah",
       distance: "7 km",
       duration: "2-3 hours",
-      type: "River & Nature",
+      type: "Natural Beauty",
       image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=500&h=300&fit=crop",
-      description: "A pristine river flowing through the forest, offering crystal clear waters and peaceful surroundings. Ideal for relaxation and meditation.",
-      highlights: ["Crystal Clear Water", "Peaceful Environment", "Natural Swimming", "Meditation Spots"],
+      description: "A serene pond within the forest, known for its clear waters and the presence of pigeons and doves.",
+      highlights: ["Crystal Clear Water", "Bird Watching", "Peaceful Environment", "Nature Photography"],
       bestTime: "October to March"
+    },
+    {
+      name: "Lalbhitiya",
+      distance: "8 km",
+      duration: "Half Day",
+      type: "Viewpoint",
+      image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=500&h=300&fit=crop",
+      description: "An elevated area ideal for birdwatching, offering distant views of the Himalayan peaks on clear days.",
+      highlights: ["Himalayan Views", "Bird Watching", "Elevated Position", "Nature Photography"],
+      bestTime: "November to February"
+    },
+    {
+      name: "Bhikhna Thori",
+      distance: "10 km",
+      duration: "3-4 hours",
+      type: "Border Village",
+      image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&h=300&fit=crop",
+      description: "A small village known for its picturesque landscapes and the confluence of the Gandak and Harha rivers.",
+      highlights: ["River Confluence", "Village Life", "Cross-border Culture", "Natural Beauty"],
+      bestTime: "Year Round"
     }
   ];
 

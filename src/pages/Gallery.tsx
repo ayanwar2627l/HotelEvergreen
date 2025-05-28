@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
@@ -100,6 +99,69 @@ const Gallery = () => {
       category: "views",
       title: "Sunset Paradise",
       description: "Breathtaking sunset view with palm trees and serene waters"
+    },
+    {
+      id: 13,
+      src: "/lovable-uploads/e6c95ed1-fde1-4650-8f70-fec84f51df24.png",
+      category: "interior",
+      title: "Reception Area with Festive Decorations",
+      description: "Welcoming reception area decorated with colorful balloons and warm lighting"
+    },
+    {
+      id: 14,
+      src: "/lovable-uploads/c07cb64e-b736-46df-9512-a7ee06ad7dd2.png",
+      category: "rooms",
+      title: "Deluxe Twin Bed Room",
+      description: "Comfortable twin bed configuration with elegant headboard design"
+    },
+    {
+      id: 15,
+      src: "/lovable-uploads/e6ca8a97-f0c7-489d-9c2b-0f764661c4a4.png",
+      category: "exterior",
+      title: "Hotel Evergreen Main Building",
+      description: "Beautiful three-story hotel building with modern lighting and festive decorations"
+    },
+    {
+      id: 16,
+      src: "/lovable-uploads/6e817699-bbaa-4a26-9037-ada892c92920.png",
+      category: "rooms",
+      title: "Standard Triple Room",
+      description: "Comfortable room with multiple beds perfect for families"
+    },
+    {
+      id: 17,
+      src: "/lovable-uploads/236b4413-f305-4042-8514-b1c63df9bfbf.png",
+      category: "rooms",
+      title: "AC Room with Modern Amenities",
+      description: "Air-conditioned room with television and modern furnishings"
+    },
+    {
+      id: 18,
+      src: "/lovable-uploads/5fa97a28-da23-4252-9d37-b4710a9fbe92.png",
+      category: "rooms",
+      title: "Premium Twin Bedroom",
+      description: "Spacious twin bedroom with elegant decor and comfortable bedding"
+    },
+    {
+      id: 19,
+      src: "/lovable-uploads/59202c3b-0045-4907-be5f-2cb7c702d7f2.png",
+      category: "rooms",
+      title: "Family Room Configuration",
+      description: "Multiple bed arrangement perfect for families and group stays"
+    },
+    {
+      id: 20,
+      src: "/lovable-uploads/305c1df5-e6db-4bf4-8af0-9465425c2817.png",
+      category: "rooms",
+      title: "Luxury Twin Suite",
+      description: "Premium twin bed suite with modern headboard and quality linens"
+    },
+    {
+      id: 21,
+      src: "/lovable-uploads/8e097435-ff64-4872-a15f-2393fd22cdcc.png",
+      category: "exterior",
+      title: "Hotel Evergreen Night Illumination",
+      description: "Spectacular night view of the hotel with beautiful lighting display"
     }
   ];
 
