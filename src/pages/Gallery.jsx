@@ -189,7 +189,7 @@ const Gallery = () => {
           <img
             src="/images/2601dcab-ce65-47bc-9c84-e760cc7dbb09.png"
             alt="Photo Gallery"
-            className="w-full h-full object-cover animate-fade-in opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-[20000ms] ease-out"
+            className="w-full h-full object-cover animate-fade-in opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 pointer-events-none"></div>
         </div>

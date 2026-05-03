@@ -137,6 +137,9 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out'
+			},
+			transitionDuration: {
+				'20000': '20000ms',
 			}
 		}
 	},
