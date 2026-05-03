@@ -149,7 +149,9 @@ const Dining = () => {
           <img
             src="/images/6fb39385-0b2d-4b78-a2f5-2503260e80b0.png"
             alt="Dining Experience"
-            className="w-full h-full object-cover animate-fade-in opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
+            className="w-full h-full object-cover opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
+            fetchpriority="high"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 pointer-events-none"></div>
         </div>

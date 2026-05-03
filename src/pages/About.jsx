@@ -38,7 +38,9 @@ const About = () => {
           <img
             src="/images/35eb632a-47a5-4e2f-928c-47725fa1eeb6.png"
             alt="About Hotel Evergreen"
-            className="w-full h-full object-cover animate-fade-in opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
+            className="w-full h-full object-cover opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
+            fetchpriority="high"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 pointer-events-none"></div>
         </div>

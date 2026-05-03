@@ -102,7 +102,9 @@ const Rooms = () => {
           <img
             src="/images/a9947cc1-707c-43f4-a749-dca956494f79.png"
             alt="Luxury Accommodations"
-            className="w-full h-full object-cover animate-fade-in opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
+            className="w-full h-full object-cover opacity-80 mix-blend-overlay hover:scale-105 transition-transform duration-20000 ease-out"
+            fetchpriority="high"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 pointer-events-none"></div>
         </div>
