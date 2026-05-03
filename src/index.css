@@ -87,10 +87,24 @@
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-background text-foreground font-inter;
+    overflow-x: hidden;
+    min-width: 320px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -105,4 +119,71 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* Responsive section padding */
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  /* Container with responsive padding */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Touch-friendly button base */
+  .btn-touch {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+  }
+
+  /* Responsive heading sizes */
+  .hero-title {
+    @apply text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-playfair font-bold;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold;
+  }
+
+  /* Responsive grid helpers */
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2;
+  }
+
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Prevent horizontal overflow */
+  .no-overflow {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/* Mobile-first responsive fixes */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 100svh;
+  }
+
+  /* Prevent text overflow on very small screens */
+  h1, h2, h3 {
+    word-break: break-word;
+  }
+}
+
+/* Smooth animation for mobile menu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-slide-down {
+  animation: slideDown 0.2s ease-out forwards;
 }
