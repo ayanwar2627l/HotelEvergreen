@@ -10,7 +10,7 @@ const Rooms = () => {
       id: 1,
       name: "Non AC Room",
       image: "/images/8249f34d-2689-46e6-b3b4-684f39a670a4.png",
-      price: "₹1,000",
+      price: "₹1,500",
       capacity: "2 Adults",
       bedType: "Double Bed",
       amenities: ["TV", "Attached Bathroom", "Others"],
